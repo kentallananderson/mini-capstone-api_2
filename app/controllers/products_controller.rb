@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_action :authenticate_admin, only: [:update]
   def first
     product = Product.first 
     render json: product.as_json

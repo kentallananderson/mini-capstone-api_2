@@ -14,3 +14,23 @@ content-type: application/json
   "img_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ZyZmN6dSUmPwZh6iAwNKoPbaLOzkFq3_Kw&usqp=CAU",
   "description": "Does can stuff"
 }
+
+###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+###
+POST http://localhost:3000/orders
+Content-Type: application/json
+
+{
+
+}
